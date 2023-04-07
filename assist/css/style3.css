@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat';
+    
+
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    top: 0;
+    right: 0;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    padding: 12px 32px 12px 27px;
+   background: #FFFFFF;
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+   z-index: 1;
+   margin-bottom:44px;
+   width: 100%;
+}
+nav .logo:hover{
+    animation-duration: 3s;
+    animation-name: logo;
+    cursor: pointer;
+    
+}
+@keyframes logo{
+    0% {transform: rotate(0);}
+    40%{transform: rotate(20deg);}
+    80%{transform: rotate(-20deg);}
+    100%{transform: rotate(0deg);}
+
+    
+}
+
+nav .nav-menu{
+    list-style: none;
+    display: flex;
+    margin-left: 226px;
+    padding-top: 4px;
+}
+nav .nav-menu li{
+    margin: 0 16px;
+    position: relative;
+}
+ nav .nav-menu li a{
+    text-decoration: none;
+    margin: auto;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #938C8C;
+ }
+ nav .nav-menu li a:hover{
+    color: #282828;
+    
+ }
+
+ nav .nav-menu li a .arow{
+    margin:0 0  0 4px ;
+    width: 15px;
+ }
+ nav .nav-menu li a .arow-black{
+    display: none;
+    width: 15px;
+ }
+
+ nav .nav-menu li:hover .arow{
+    display: none;
+
+     
+ }
+ nav .nav-menu li:hover .arow-black{
+    display: inherit;
+    margin:0 0  0 4px ;
+ }
+
+
+ nav .nav-menu li  .jop {
+    position: absolute;
+    left: -94px;
+    top: 30px ;
+    background: rgba(40, 40, 40, 1);
+    height: 44px;
+    border-radius: 8px;
+    padding: 12px 32px 12px 32px;
+    width: 578px;
+    margin-left: 0;
+    list-style: none;
+    display: none;
+   
+}
+nav .nav-menu li .arow2{
+    position: absolute;
+    left: 6px;
+    top: 17px;
+    display: none;
+    
+}
+nav .nav-menu li .jop li{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #938C8C;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding: 0 16px;
+   
+
+}
+nav .nav-menu li .jop li:hover a{
+    color: #FF8500;
+    border-bottom: 1px solid #FF8500;
+
+}
+nav .nav-menu li:hover > .jop{
+   display: flex;
+   transition-delay: 1s;
+   
+}
+nav .nav-menu li:hover > .arow2{
+    display: block;
+    
+ }
+nav .log{
+    padding-left:64px ;
+}
+
+nav .log a{
+  text-decoration: none;
+  padding-right: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;;
+  color: #282828;
+
+
+}
+nav .log a:hover{
+
+   font-weight: 700;
+}
+
+nav .lan{
+    padding-top: 4px;
+    padding-left: 15px;
+    display: flex;
+}
+nav .lan a{
+text-decoration: none;
+font-style: normal;
+padding:0 1px;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+color: #C5BCB3;
+
+
+}
+nav .lan p{
+    font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+color: #C5BCB3;
+}
+
+nav .lan a:hover{
+    color:#FF8500 ;
+}
+nav .lan:hover  p {
+    color:#FF8500 ;
+}
+nav .menuside{
+    display: none;
+  }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    align-items: center;
+  }
+  
+  .sidenav .nav-menu2{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sidenav .nav-menu2 li{
+    list-style: none;
+    padding: 10px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidenav .nav-menu2 li a{
+    text-decoration: none;
+    margin: auto;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #938C8C;
+  }
+  .sidenav .nav-menu2 li a:hover{
+    color: #282828;
+    
+ }
+
+ .sidenav .nav-menu2 li a .arow{
+    margin:0 0  0 4px ;
+    width: 15px;
+ }
+ .sidenav .nav-menu2 li a .arow-black{
+    display: none;
+    width: 15px;
+ }
+
+ .sidenav .nav-menu2 li:hover .arow{
+    display: none;
+
+     
+ }
+ .sidenav .nav-menu2 li:hover .arow-black{
+    display: initial;
+    margin:0 0  0 4px ;
+ }
+ .sidenav .nav-menu2 li  .jop {
+   
+    display: none;
+  
+}
+
+.sidenav .nav-menu2 li .jop li:hover a{
+    color: #FF8500;
+    border-bottom: 1px solid #FF8500;
+
+}
+
+.sidenav .nav-menu2 li:hover > .jop{
+    display: flex;
+    flex-direction: column;
+    transition-delay: 1s;
+     background: rgba(40, 40, 40, 1);
+     border-radius: 8px;
+     padding: 12px 10px 5px 10px;
+     margin-top: 10px;
+     list-style: none;
+     animation-duration: 1s;
+     animation-name: jopgo;
+    
+ }
+ @keyframes jopgo{
+    from{
+        margin-left:300px;
+    }
+    to{
+        margin-left: 0;
+    }
+ }
+  .sidenav .closebtn {
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+  
+
+.contain{
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     max-width: 100%;
+    background-image: url(../img/backimg.png) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+}
+
+.syria-ca{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 120px;
+}
+.syria-ca h1{
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 29px;
+   color: #000000;
+   width: 281px;
+   height: 29px;
+}
+.syria-ca .companies-container, .partners .companies-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 55px;
+    
+}
+.syria-ca .companies , .partners .companies{
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-wrap: initial;
+   padding-bottom: 32px;
+ 
+   
+
+}
+
+.syria-ca .companies .companie , .partners .companies .companie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 43px;
+    
+}
+.syria-ca .companies .companie img ,.partners .companies .companie img {
+    padding-bottom: 18px;
+}
+.syria-ca .companies .companie p, .partners .companies .companie p{
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+color: #282828;
+}
+
+.partners{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:64px 0;
+}
+.partners h1{
+ 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    width: 448px;
+    height: 29px;
+ }
+
+
+
+
+ footer{
+    height: 213px;
+    min-width: 100%;
+    background: rgba(40, 40, 40, 1);
+    padding: 32px 120px;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+footer .fmenu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+
+footer .fmenu  ul  {
+    list-style: none;
+   
+
+}
+footer .fmenu ul li   {
+    padding-bottom: 8px;
+}
+footer .fmenu ul li h1 {
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #FFFFFF;
+
+}
+footer .fmenu ul li a{
+    text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+   color:  rgba(255, 255, 255, 1);
+ 
+}
+
+
+footer .f-end{
+    padding-top: 25px;
+    display: flex;
+    
+  
+}
+footer .f-end p{
+    width: 379px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    
+    
+    }
+    footer .f-end .line{
+        width: 731px;
+        border-bottom: 1px solid white;
+        margin-bottom: 12px;
+        margin-left: 16px;
+      }
+
+
+      @media( max-width:2560px){
+ 
+
+        nav {
+           
+            justify-content: space-between;
+        
+        }
+      
+    }
+  
+      @media( max-width:1365px){
+ 
+
+        nav .nav-menu{
+           
+            margin-left: 100px;
+           
+        }
+        footer .f-end .line{
+            width: 60%;
+            
+          }
+    }
+    @media( max-width:1365px){
+ 
+        nav .nav-menu li{
+            margin: 0 10px;
+        }
+      
+    }
+    @media( max-width:1183px){
+     
+        nav .nav-menu{
+           
+            margin: 0 30px;
+           
+        }
+       
+    
+        nav .log{
+           
+            padding-left: 20px ;
+           
+        }
+        nav .log a{
+            padding-right: 20px;
+        }
+    
+        nav .lan{
+            padding-left: 5px;
+        }
+        footer .f-end .line{
+            width: 40%;
+            border-bottom: 1px solid white;
+            margin-bottom: 12px;
+            margin-left: 16px;
+          }
+          .syria-ca .companies .companie p, .partners .companies .companie p{
+            padding-bottom: 10px;
+            }
+    }
+    
+    @media( max-width:1071px){
+     nav{
+        justify-content:flex-start;
+     }
+        nav .nav-menu{
+            display: none;
+         }
+         nav .menuside{
+            display: block;
+            position: fixed;
+            right: 33px;
+          }
+        
+        nav .log{
+           
+            padding-left: 50px ;
+           
+        }
+        nav .log a{
+            padding-right: 20px;
+        }
+    
+        nav .lan{
+            padding-left: 20px;
+        }
+    
+        footer{
+            align-items: center;
+            height: max-content;
+            padding: 32px 70px;
+        }
+       
+        footer .f-end .line{
+           display: none;
+          }
+          footer .fmenu ul   {
+           padding: 10px 10px 10px 10px;
+        }
+    
+    }
+    @media( max-width:607px){
+ 
+        footer{
+            align-items: center;
+            height: max-content;
+            padding: 32px 20px;
+        }
+    
+    }
+    @media( max-width:413px){
+        
+        footer{
+            align-items: center;
+            height: max-content;
+            padding: 32px 0px;
+        }
+    
+        footer .f-end p{
+            width: 200px;
+            font-size: 10px;
+           
+            
+            
+            }
+        
+    
+    }
+    
