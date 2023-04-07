@@ -579,6 +579,18 @@ footer .f-end p{
             
             }
         
-    
+            .syria-ca .companies .companie , .partners .companies .companie {
+                padding: 0 20px;
+                }
+                .partners h1{
+ 
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 29px;
+                    color: #000000;
+                    width: 350px;
+                    height: 29px;
+                 }
     }
     
